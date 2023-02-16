@@ -1,13 +1,10 @@
 ﻿// Создаем метод, передаем в него массив, далее с помощью Random заполняем массив нужным колличеством элементов
 
-
-
-
-
-
 void FillArray(int[] collection) // Создаем и называем метод
 {
     int length = collection.Length; // Задаем то, что нам надо получить размер массива collection
+                                    // Или переменной length(размер) присваиваем размер Random-ного массива
+                                    // сollection.
     int index = 0;
     while (index < length)
     {
@@ -27,7 +24,7 @@ void PrintArray(int[] coll)
 }
 
 int[] array = new int[10]; //  массив array в котором создай создай новый массив в котором будет 10 элементов,
-// сейчас он наполнен нулями.
+                           // сейчас он наполнен нулями.
 
 FillArray(array);
 PrintArray(array);
